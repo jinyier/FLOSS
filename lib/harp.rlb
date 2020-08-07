@@ -1,0 +1,2762 @@
+dffcs1
+3 0 2
+CLRB DIN CLK
+    Q A 2
+    R
+    O 1
+    O 0
+    
+    QN C 1
+    R
+    C 3
+
+dffss1
+3 0 2
+SETB DIN CLK
+    Q O 2
+    R
+    O 1
+    C 0
+    
+    QN C 1
+    R
+    C 3
+
+dffcs2
+3 0 2
+CLRB DIN CLK
+    Q A 2
+    R
+    O 1
+    O 0
+    
+    QN C 1
+    R
+    C 3
+
+dffles1
+3 2 2
+CLK DIN EB
+    A 2
+    G
+    O 1
+    C 2
+    
+    A 2
+    G
+    O 5
+    O 2
+    
+    Q O 2
+    R
+    O 3
+    O 4
+    
+    QN C 1
+    R
+    C 5    
+
+dffasles1
+4 3 2
+SETB EB DIN CLK  
+    A 2
+    G
+    O 2
+    C 1
+    
+    A 2
+    G
+    O 7
+    O 1
+    
+    O 2
+    G
+    O 5
+    O 4
+    
+    Q O 2
+    R
+    C 0
+    O 6
+    
+    QN C 1
+    R
+    C 7
+
+
+hadd1s2
+2 0 2
+AIN BIN
+   OUTS X 2
+   G
+   O 0
+   O 1
+
+   OUTC A 2
+   G
+   O 0
+   O 1
+
+
+mxi41s1
+6 4 1
+DIN1 DIN2 DIN3 DIN4 SIN0 SIN1
+    A 3
+    G
+    O 0
+    C 4
+    C 5
+
+    A 3
+    G
+    O 1
+    O 4
+    C 5
+
+    A 3
+    G
+    O 2
+    C 4
+    O 5
+
+    A 3
+    G
+    O 3
+    O 4
+    O 5
+
+    Q A 4
+    G
+    C 6
+    C 7
+    C 8
+    C 9
+
+
+dffases2
+4 4 2
+DIN EN CLK SETB
+   A 2
+   G
+   C 1
+   O 8
+
+   A 2
+   G
+   O 1
+   O 0
+
+   O 2
+   G
+   O 4
+   O 5
+
+   O 2
+   G
+   O 6
+   C 3
+
+   Q N 1
+   R
+   O 7
+   
+   QN C 1
+   R
+   C 8
+
+
+
+lclks1
+2 2 2
+DIN CLK
+ 
+   A 2
+   G
+   O 0
+   O 1
+
+   A 2
+   G
+   C 1
+   O 4
+
+   Q O 2
+   G
+   O 2
+   O 3
+
+   QN C 1
+   G
+   C 4
+
+dffass1
+3 0 2
+DIN CLK SETB
+   Q O 2
+   R
+   O 0
+   C 2
+ 
+   QN C 1
+   R
+   C 3
+
+
+dffass2
+3 0 2
+DIN CLK SETB
+   Q O 2
+   R
+   O 0
+   C 2
+ 
+   QN C 1
+   R
+   C 3
+
+i1s4
+1 0 1
+DIN
+   Q N 1
+   G
+   C 0
+
+
+i1s5
+1 0 1
+DIN
+   Q N 1
+   G
+   C 0
+
+
+i1s6
+1 0 1
+DIN
+   Q N 1
+   G
+   C 0
+
+
+hnb1s1
+1 0 1
+DIN
+   Q N 1
+   G
+   O 0
+
+nb1s2
+1 0 1
+DIN
+   Q N 1
+   G
+   O 0
+
+nb1s1
+1 0 1
+DIN
+   Q N 1
+   G
+   O 0
+
+
+dffacs2
+3 0 2
+CLK CLRB DIN
+   Q A 2
+   R
+   O 1
+   O 2
+  
+   QN C 1
+   R
+   C 3
+
+
+dffacs1
+3 0 2
+CLK CLRB DIN
+   Q A 2
+   R
+   O 1
+   O 2
+  
+   QN C 1
+   R
+   C 3
+
+
+sdffacs1
+5 3 2
+CLK CLRB DIN SDIN SSEL
+   A 2
+   G
+   O 3
+   O 4
+
+   A 2
+   G
+   C 4
+   O 2
+
+   O 2
+   G
+   O 5
+   O 6
+
+   Q A 2
+   R
+   O 1
+   O 7
+
+   QN C 1
+   R
+   C 8
+
+
+dffascs1
+4 1 2
+CLK CLRB DIN SETB
+   O 2
+   G
+   C 3
+   O 2
+
+   Q A 2
+   R
+   O 4
+   O 1
+
+   QN C 1
+   R
+   C 5
+
+dffascs2
+4 1 2
+CLK CLRB DIN SETB
+   O 2
+   G
+   C 3
+   O 2
+
+   Q A 2
+   R
+   O 4
+   O 1
+
+   QN C 1
+   R
+   C 5
+
+
+dffscs1
+4 1 2
+DIN SETB CLRB CLK
+   O 2
+   G
+   O 0
+   C 1   
+
+   Q A 2
+   R
+   O 2
+   O 4
+ 
+   QN C 1
+   R
+   C 5
+   
+dffscs2
+4 1 2
+DIN SETB CLRB CLK
+   O 2
+   G
+   O 0
+   C 1   
+
+   Q A 2
+   R
+   O 2
+   O 4
+ 
+   QN C 1
+   R
+   C 5
+
+dffacles2
+4 4 2
+DIN EB CLK CLRB
+   A 2
+   G
+   O 1
+   O 8
+
+   A 2
+   G
+   C 1
+   O 0
+
+   O 2
+   G
+   O 4
+   O 5
+
+   A 2
+   G
+   O 6
+   O 3
+
+   Q N 1
+   R
+   O 7
+   
+   QN C 1
+   R
+   C 8
+
+
+dffacles1_t
+4 4 2
+DIN EN CLK CLRB
+   A 2
+   G
+   C 1
+   O 8
+
+   A 2
+   G
+   O 1
+   O 0
+
+   O 2
+   G
+   O 4
+   O 5
+
+   A 2
+   G
+   O 6
+   O 3
+
+   Q N 1
+   R
+   O 7
+   
+   QN C 1
+   R
+   C 8
+
+
+
+dffacles1
+4 4 2
+DIN EB CLK CLRB
+   A 2
+   G
+   O 1
+   O 8
+
+   A 2
+   G
+   C 1
+   O 0
+
+   O 2
+   G
+   O 4
+   O 5
+
+   A 2
+   G
+   O 6
+   O 3
+
+   Q N 1
+   R
+   O 7
+   
+   QN C 1
+   R
+   C 8
+
+
+
+oai2222s1
+8 4 1
+DIN1 DIN2 DIN3 DIN4 DIN5 DIN6 DIN7 DIN8
+   O 2
+   G
+   O 0
+   O 1
+
+   O 2
+   G
+   O 2
+   O 3
+
+   O 2
+   G
+   O 4
+   O 5
+
+   O 2
+   G
+   O 6
+   O 7
+
+   Q O 4
+   G
+   C 8
+   C 9
+   C 10
+   C 11
+
+
+oai2222s2
+8 4 1
+DIN1 DIN2 DIN3 DIN4 DIN5 DIN6 DIN7 DIN8
+   O 2
+   G
+   O 0
+   O 1
+
+   O 2
+   G
+   O 2
+   O 3
+
+   O 2
+   G
+   O 4
+   O 5
+
+   O 2
+   G
+   O 6
+   O 7
+
+   Q O 4
+   G
+   C 8
+   C 9
+   C 10
+   C 11
+
+oai2222s3
+8 4 1
+DIN1 DIN2 DIN3 DIN4 DIN5 DIN6 DIN7 DIN8
+   O 2
+   G
+   O 0
+   O 1
+
+   O 2
+   G
+   O 2
+   O 3
+
+   O 2
+   G
+   O 4
+   O 5
+
+   O 2
+   G
+   O 6
+   O 7
+
+   Q O 4
+   G
+   C 8
+   C 9
+   C 10
+   C 11
+
+
+dffs1
+2 0 2
+DIN CLK
+   Q N 1
+   R
+   O 0
+
+   QN C 1
+   R
+   C 2
+
+
+dffs2
+2 0 2
+DIN CLK
+   Q N 1
+   R
+   O 0
+
+   QN C 1
+   R
+   C 2
+
+
+oai211s2
+4 1 1
+DIN1 DIN2 DIN3 DIN4
+   O 2
+   G
+   O 0
+   O 1
+   
+   Q O 3
+   G
+   C 2
+   C 3
+   C 4
+
+
+
+oai211s3
+4 1 1
+DIN1 DIN2 DIN3 DIN4
+   O 2
+   G
+   O 0
+   O 1
+   
+   Q O 3
+   G
+   C 2
+   C 3
+   C 4
+
+oai221s2
+5 2 1
+DIN1 DIN2 DIN3 DIN4 DIN5
+   O 2
+   G
+   O 0
+   O 1
+   
+   O 2
+   G
+   O 2
+   O 3
+
+   Q O 3
+   G
+   C 4
+   C 5
+   C 6
+
+
+oai13s2
+4 1 1
+DIN1 DIN2 DIN3 DIN4
+   O 3
+   G
+   O 1
+   O 2
+   O 3
+
+   Q O 2
+   G
+   C 0
+   C 4
+
+
+oai13s3
+4 1 1
+DIN1 DIN2 DIN3 DIN4
+   O 3
+   G
+   O 1
+   O 2
+   O 3
+
+   Q O 2
+   G
+   C 0
+   C 4
+
+
+nnd2s1
+2 0 1
+DIN1 DIN2
+   Q O 2
+   G
+   C 0
+   C 1
+
+nnd7s3
+7 0 1
+DIN1 DIN2 DIN3 DIN4 DIN5 DIN6 DIN7
+   Q O 7
+   G
+   C 0
+   C 1
+   C 2
+   C 3
+   C 4
+   C 5
+   C 6
+
+
+nnd2s2
+2 0 1
+DIN1 DIN2
+   Q O 2
+   G
+   C 0
+   C 1
+
+
+nnd2s3
+2 0 1
+DIN1 DIN2
+   Q O 2
+   G
+   C 0
+   C 1
+
+
+nnd3s3
+3 0 1
+DIN1 DIN2 DIN3
+   Q O 3
+   G
+   C 0
+   C 1
+   C 2
+
+nnd3s1
+3 0 1
+DIN1 DIN2 DIN3
+   Q O 3
+   G
+   C 0
+   C 1
+   C 2
+
+
+
+nnd3s2
+3 0 1
+DIN1 DIN2 DIN3
+   Q O 3
+   G
+   C 0
+   C 1
+   C 2
+
+
+oai22s1
+4 2 1
+DIN1 DIN2 DIN3 DIN4
+   O 2
+   G
+   O 0
+   O 1
+
+   O 2
+   G
+   O 2
+   O 3
+
+   Q O 2
+   G
+   C 4
+   C 5
+
+
+oai22s2
+4 2 1
+DIN1 DIN2 DIN3 DIN4
+   O 2
+   G
+   O 0
+   O 1
+
+   O 2
+   G
+   O 2
+   O 3
+
+   Q O 2
+   G
+   C 4
+   C 5
+
+
+aoai122s2
+5 3 1
+DIN1 DIN2 DIN3 DIN4 DIN5
+   A 2
+   G
+   O 1
+   O 2
+
+   A 2
+   G
+   O 3
+   O 4
+
+   O 2
+   G
+   O 5
+   O 6
+
+   Q O 2
+   G
+   C 7
+   C 0
+
+aoi23s2
+5 2 1
+DIN1 DIN2 DIN3 DIN4 DIN5
+   A 2
+   G
+   O 0
+   O 1
+   
+   A 3
+   G
+   O 2
+   O 3
+   O 4
+
+   Q A 2
+   G
+   C 5
+   C 6
+
+
+
+ib1s1
+1 0 1
+DIN
+   Q N 1
+   G
+   C 0
+
+
+
+ib1s2
+1 0 1
+DIN
+   Q N 1
+   G
+   C 0
+
+
+or3s3
+3 0 1
+DIN1 DIN2 DIN3
+   Q O 3
+   G
+   O 0
+   O 1
+   O 2
+
+
+oai1112s2
+5 1 1
+DIN1 DIN2 DIN3 DIN4 DIN5
+   O 2
+   G
+   O 3
+   O 4
+
+   Q O 4
+   G
+   C 0
+   C 1
+   C 2
+   C 5
+
+
+oai322s1
+7 3 1
+DIN1 DIN2 DIN3 DIN4 DIN5 DIN6 DIN7
+   O 3
+   G
+   O 0
+   O 1
+   O 2
+
+   O 2
+   G
+   O 3
+   O 4
+
+   O 2
+   G
+   O 5
+   O 6
+
+   Q O 3
+   G
+   C 7
+   C 8
+   C 9
+
+
+oai322s2
+7 3 1
+DIN1 DIN2 DIN3 DIN4 DIN5 DIN6 DIN7
+   O 3
+   G
+   O 0
+   O 1
+   O 2
+
+   O 2
+   G
+   O 3
+   O 4
+
+   O 2
+   G
+   O 5
+   O 6
+
+   Q O 3
+   G
+   C 7
+   C 8
+   C 9
+
+
+oai321s1
+6 2 1
+DIN1 DIN2 DIN3 DIN4 DIN5 DIN6
+   O 3
+   G
+   O 0
+   O 1
+   O 2
+
+   O 2
+   G
+   O 3
+   O 4
+
+   Q O 3
+   G
+   C 5
+   C 6
+   C 7
+
+
+oai222s1
+6 3 1
+DIN1 DIN2 DIN3 DIN4 DIN5 DIN6
+   O 2
+   G
+   O 0
+   O 1
+
+   O 2
+   G
+   O 2
+   O 3
+
+   O 2
+   G
+   O 4
+   O 5
+
+   Q O 3
+   G
+   C 6
+   C 7
+   C 8
+
+
+   
+oai222s2
+6 3 1
+DIN1 DIN2 DIN3 DIN4 DIN5 DIN6
+   O 2
+   G
+   O 0
+   O 1
+
+   O 2
+   G
+   O 2
+   O 3
+
+   O 2
+   G
+   O 4
+   O 5
+
+   Q O 3
+   G
+   C 6
+   C 7
+   C 8
+
+
+oai222s3
+6 3 1
+DIN1 DIN2 DIN3 DIN4 DIN5 DIN6
+   O 2
+   G
+   O 0
+   O 1
+
+   O 2
+   G
+   O 2
+   O 3
+
+   O 2
+   G
+   O 4
+   O 5
+
+   Q O 3
+   G
+   C 6
+   C 7
+   C 8
+
+
+oai32s1
+5 2 1
+DIN1 DIN2 DIN3 DIN4 DIN5
+   O 3
+   G
+   O 0
+   O 1
+   O 2
+
+   O 2
+   G 
+   O 3
+   O 4
+
+   Q O 2
+   G
+   C 5
+   C 6
+
+
+mxi21s2
+3 2 1
+DIN1 DIN2 SIN
+   A 2
+   G
+   O 0
+   C 2
+
+   A 2
+   G
+   O 1
+   O 2
+
+   Q A 2
+   G
+   C 3
+   C 4
+
+
+mxi21s3
+3 2 1
+DIN1 DIN2 SIN
+   A 2
+   G
+   O 0
+   C 2
+
+   A 2
+   G
+   O 1
+   O 2
+
+   Q A 2
+   G
+   C 3
+   C 4
+
+
+i1s1
+1 0 1
+DIN
+   Q N 1
+   G
+   C 0
+
+
+i1s2
+1 0 1
+DIN
+   Q N 1
+   G
+   C 0
+
+
+i1s3
+1 0 1
+DIN
+   Q N 1
+   G
+   C 0
+
+
+xnr2s3
+2 0 1
+DIN1 DIN2
+   Q X 2
+   G
+   C 0
+   O 1
+
+
+
+xnr2s1
+2 0 1
+DIN1 DIN2
+   Q X 2
+   G
+   C 0
+   O 1
+
+xnr2s2
+2 0 1
+DIN1 DIN2
+   Q X 2
+   G
+   C 0
+   O 1
+
+
+or5s1
+5 0 1
+DIN1 DIN2 DIN3 DIN4 DIN5
+   Q O 5
+   G
+   O 0
+   O 1
+   O 2
+   O 3
+   O 4
+
+or5s3
+5 0 1
+DIN1 DIN2 DIN3 DIN4 DIN5
+   Q O 5
+   G
+   O 0
+   O 1
+   O 2
+   O 3
+   O 4
+
+
+or5s2
+5 0 1
+DIN1 DIN2 DIN3 DIN4 DIN5
+   Q O 5
+   G
+   O 0
+   O 1
+   O 2
+   O 3
+   O 4
+
+
+aoi2221s2
+7 3 1
+DIN1 DIN2 DIN3 DIN4 DIN5 DIN6 DIN7
+   A 2
+   G
+   O 0
+   O 1
+
+   A 2
+   G
+   O 2
+   O 3
+
+   A 2
+   G
+   O 4
+   O 5
+
+   Q A 4
+   G
+   C 6
+   C 7
+   C 8
+   C 9
+
+
+aoi2221s1
+7 3 1
+DIN1 DIN2 DIN3 DIN4 DIN5 DIN6 DIN7
+   A 2
+   G
+   O 0
+   O 1
+
+   A 2
+   G
+   O 2
+   O 3
+
+   A 2
+   G
+   O 4
+   O 5
+
+   Q A 4
+   G
+   C 6
+   C 7
+   C 8
+   C 9
+
+
+aoi222s1
+6 3 1
+DIN1 DIN2 DIN3 DIN4 DIN5 DIN6
+   A 2
+   G
+   O 0
+   O 1
+
+   A 2
+   G
+   O 2
+   O 3
+
+   A 2
+   G
+   O 4
+   O 5
+
+   Q A 3
+   G
+   C 6
+   C 7
+   C 8
+
+
+aoi222s2
+6 3 1
+DIN1 DIN2 DIN3 DIN4 DIN5 DIN6
+   A 2
+   G
+   O 0
+   O 1
+
+   A 2
+   G
+   O 2
+   O 3
+
+   A 2
+   G
+   O 4
+   O 5
+
+   Q A 3
+   G
+   C 6
+   C 7
+   C 8
+
+
+and2s1
+2 0 1
+DIN1 DIN2
+   Q A 2
+   G
+   O 0
+   O 1
+
+
+xor2s1
+2 0 1
+DIN1 DIN2
+   Q X 2
+   G
+   O 0
+   O 1
+
+
+
+xor2s2
+2 0 1
+DIN1 DIN2
+   Q X 2
+   G
+   O 0
+   O 1
+
+
+xor2s3
+2 0 1
+DIN1 DIN2
+   Q X 2
+   G
+   O 0
+   O 1
+
+
+hi1s1
+1 0 1
+DIN
+   Q N 1
+   G
+   C 0
+
+
+and3s1
+3 0 1
+DIN1 DIN2 DIN3
+   Q A 3
+   G
+   O 0
+   O 1
+   O 2
+
+and3s3
+3 0 1
+DIN1 DIN2 DIN3
+   Q A 3
+   G
+   O 0
+   O 1
+   O 2
+
+and3s2
+3 0 1
+DIN1 DIN2 DIN3
+   Q A 3
+   G
+   O 0
+   O 1
+   O 2
+
+
+or2s1
+2 0 1
+DIN1 DIN2
+   Q O 2
+   G
+   O 0
+   O 1
+
+
+and4s1
+4 0 1
+DIN1 DIN2 DIN3 DIN4
+   Q A 4
+   G
+   O 0
+   O 1
+   O 2
+   O 3
+
+
+and4s2
+4 0 1
+DIN1 DIN2 DIN3 DIN4
+   Q A 4
+   G
+   O 0
+   O 1
+   O 2
+   O 3
+
+
+and4s3
+4 0 1
+DIN1 DIN2 DIN3 DIN4
+   Q A 4
+   G
+   O 0
+   O 1
+   O 2
+   O 3
+
+
+nor2s1
+2 0 1
+DIN1 DIN2
+   Q A 2
+   G
+   C 0
+   C 1
+
+
+
+nnd4s3
+4 0 1
+DIN1 DIN2 DIN3 DIN4
+   Q O 4
+   G
+   C 0
+   C 1
+   C 2
+   C 3   
+
+
+nnd4s1
+4 0 1
+DIN1 DIN2 DIN3 DIN4
+   Q O 4
+   G
+   C 0
+   C 1
+   C 2
+   C 3   
+
+
+
+aoi21s1
+3 1 1
+DIN1 DIN2 DIN3
+   A 2
+   G
+   O 0
+   O 1
+
+   Q A 2
+   G
+   C 2
+   C 3
+
+
+aoi21s3
+3 1 1
+DIN1 DIN2 DIN3
+   A 2
+   G
+   O 0
+   O 1
+
+   Q A 2
+   G
+   C 2
+   C 3
+
+
+nor6s1
+6 0 1
+DIN1 DIN2 DIN3 DIN4 DIN5 DIN6
+   Q A 6
+   G
+   C 0
+   C 1
+   C 2
+   C 3
+   C 4
+   C 5
+
+nor6s2
+6 0 1
+DIN1 DIN2 DIN3 DIN4 DIN5 DIN6
+   Q A 6
+   G
+   C 0
+   C 1
+   C 2
+   C 3
+   C 4
+   C 5
+
+
+aoi22s2
+4 2 1
+DIN1 DIN2 DIN3 DIN4
+   A 2
+   G
+   O 0
+   O 1
+
+   A 2
+   G
+   O 2
+   O 3
+
+   Q A 2
+   G
+   C 4
+   C 5
+
+aoi22s3
+4 2 1
+DIN1 DIN2 DIN3 DIN4
+   A 2
+   G
+   O 0
+   O 1
+
+   A 2
+   G
+   O 2
+   O 3
+
+   Q A 2
+   G
+   C 4
+   C 5
+
+
+oai21s1
+3 1 1
+DIN1 DIN2 DIN3
+   O 2
+   G
+   O 0
+   O 1
+
+   Q O 2
+   G
+   C 2
+   C 3
+
+
+oai21s2
+3 1 1
+DIN1 DIN2 DIN3
+   O 2
+   G
+   O 0
+   O 1
+
+   Q O 2
+   G
+   C 2
+   C 3
+
+
+aoi21s2
+3 1 1
+DIN1 DIN2 DIN3
+   A 2
+   G
+   O 0
+   O 1
+
+   Q A 2
+   G
+   C 2
+   C 3
+
+
+aoi13s2
+4 1 1
+DIN1 DIN2 DIN3 DIN4
+   A 3
+   G
+   O 1
+   O 2
+   O 3
+   
+   Q A 2
+   G
+   C 0
+   C 4
+
+aoi123s1
+6 2 1
+DIN1 DIN2 DIN3 DIN4 DIN5 DIN6
+   A 2
+   G
+   O 1
+   O 2
+
+   A 3
+   G
+   O 3
+   O 4
+   O 5
+
+   Q A 3
+   G
+   C 0
+   C 6
+   C 7
+
+aoi123s3
+6 2 1
+DIN1 DIN2 DIN3 DIN4 DIN5 DIN6
+   A 2
+   G
+   O 1
+   O 2
+
+   A 3
+   G
+   O 3
+   O 4
+   O 5
+
+   Q A 3
+   G
+   C 0
+   C 6
+   C 7
+
+aoi123s2
+6 2 1
+DIN1 DIN2 DIN3 DIN4 DIN5 DIN6
+   A 2
+   G
+   O 1
+   O 2
+
+   A 3
+   G
+   O 3
+   O 4
+   O 5
+
+   Q A 3
+   G
+   C 0
+   C 6
+   C 7
+
+
+oai33s1
+6 2 1
+DIN1 DIN2 DIN3 DIN4 DIN5 DIN6
+   O 3
+   G
+   O 0
+   O 1
+   O 2
+   
+   O 3
+   G
+   O 3
+   O 4
+   O 5
+   
+   Q O 2
+   G
+   C 6
+   C 7
+
+
+oai33s2
+6 2 1
+DIN1 DIN2 DIN3 DIN4 DIN5 DIN6
+   O 3
+   G
+   O 0
+   O 1
+   O 2
+   
+   O 3
+   G
+   O 3
+   O 4
+   O 5
+   
+   Q O 2
+   G
+   C 6
+   C 7
+
+
+
+oai33s3
+6 2 1
+DIN1 DIN2 DIN3 DIN4 DIN5 DIN6
+   O 3
+   G
+   O 0
+   O 1
+   O 2
+   
+   O 3
+   G
+   O 3
+   O 4
+   O 5
+   
+   Q O 2
+   G
+   C 6
+   C 7
+
+
+aoai1112s2
+5 2 1
+DIN1 DIN2 DIN3 DIN4 DIN5
+   A 2
+   G
+   O 3
+   O 4
+   
+   O 2
+   G
+   O 2
+   O 5
+   
+   Q O 3
+   G
+   C 0
+   C 1
+   C 6
+
+
+aoi211s1
+4 1 1
+DIN1 DIN2 DIN3 DIN4
+   A 2
+   G
+   O 0
+   O 1
+
+   Q A 3
+   G
+   C 2
+   C 3
+   C 4
+
+aoi221s2
+5 2 1
+DIN1 DIN2 DIN3 DIN4 DIN5
+   A 2
+   G
+   O 0
+   O 1
+   
+   A 2
+   G
+   O 2
+   O 3
+   
+   Q A 3
+   G
+   C 4
+   C 5
+   C 6
+
+aoi221s3
+5 2 1
+DIN1 DIN2 DIN3 DIN4 DIN5
+   A 2
+   G
+   O 0
+   O 1
+   
+   A 2
+   G
+   O 2
+   O 3
+   
+   Q A 3
+   G
+   C 4
+   C 5
+   C 6
+
+aoi221s1
+5 2 1
+DIN1 DIN2 DIN3 DIN4 DIN5
+   A 2
+   G
+   O 0
+   O 1
+   
+   A 2
+   G
+   O 2
+   O 3
+   
+   Q A 3
+   G
+   C 4
+   C 5
+   C 6
+
+aoi33s1
+6 2 1
+DIN1 DIN2 DIN3 DIN4 DIN5 DIN6
+   A 3
+   G
+   O 0
+   O 1
+   O 2
+   
+   A 3
+   G
+   O 3 
+   O 4
+   O 5
+
+   Q A 2
+   G
+   C 6
+   C 7
+
+aoi33s2
+6 2 1
+DIN1 DIN2 DIN3 DIN4 DIN5 DIN6
+   A 3
+   G
+   O 0
+   O 1
+   O 2
+   
+   A 3
+   G
+   O 3 
+   O 4
+   O 5
+
+   Q A 2
+   G
+   C 6
+   C 7
+
+aoi42s1
+6 2 1
+DIN1 DIN2 DIN3 DIN4 DIN5 DIN6
+   A 4
+   G
+   O 0
+   O 1
+   O 2
+   O 3
+
+   A 2
+   G
+   O 4
+   O 5
+
+   Q A 2
+   G
+   C 6
+   C 7
+   
+
+aoi42s3
+6 2 1
+DIN1 DIN2 DIN3 DIN4 DIN5 DIN6
+   A 4
+   G
+   O 0
+   O 1
+   O 2
+   O 3
+
+   A 2
+   G
+   O 4
+   O 5
+
+   Q A 2
+   G
+   C 6
+   C 7
+   
+aoi42s2
+6 2 1
+DIN1 DIN2 DIN3 DIN4 DIN5 DIN6
+   A 4
+   G
+   O 0
+   O 1
+   O 2
+   O 3
+
+   A 2
+   G
+   O 4
+   O 5
+
+   Q A 2
+   G
+   C 6
+   C 7
+   
+aoi4111s1
+7 1 1
+DIN1 DIN2 DIN3 DIN4 DIN5 DIN6 DIN7
+   A 4
+   G
+   O 0
+   O 1
+   O 2
+   O 3
+
+   Q A 4
+   G
+   C 4
+   C 5
+   C 6
+   C 7
+
+
+nor5s2
+5 0 1
+DIN1 DIN2 DIN3 DIN4 DIN5
+   Q A 5
+   G
+   C 0
+   C 1
+   C 2
+   C 3
+   C 4
+
+
+nor5s3
+5 0 1
+DIN1 DIN2 DIN3 DIN4 DIN5
+   Q A 5
+   G
+   C 0
+   C 1
+   C 2
+   C 3
+   C 4
+
+nor5s1
+5 0 1
+DIN1 DIN2 DIN3 DIN4 DIN5
+   Q A 5
+   G
+   C 0
+   C 1
+   C 2
+   C 3
+   C 4
+
+nor4s3
+4 0 1
+DIN1 DIN2 DIN3 DIN4
+   Q A 4
+   G
+   C 0
+   C 1
+   C 2
+   C 3
+
+
+nor4s1
+4 0 1
+DIN1 DIN2 DIN3 DIN4
+   Q A 4
+   G
+   C 0
+   C 1
+   C 2
+   C 3
+
+
+
+or3s2
+3 0 1
+DIN1 DIN2 DIN3
+   Q O 3
+   G
+   O 0
+   O 1
+   O 2
+
+
+or3s1
+3 0 1
+DIN1 DIN2 DIN3
+   Q O 3
+   G
+   O 0
+   O 1
+   O 2
+
+
+oai24s2
+6 2 1
+DIN1 DIN2 DIN3 DIN4 DIN5 DIN6
+   O 2
+   G
+   O 0
+   O 1
+
+   O 4
+   G
+   O 2
+   O 3
+   O 4
+   O 5
+
+   Q O 2
+   G
+   C 6
+   C 7
+
+
+oai24s1
+6 2 1
+DIN1 DIN2 DIN3 DIN4 DIN5 DIN6
+   O 2
+   G
+   O 0
+   O 1
+
+   O 4
+   G
+   O 2
+   O 3
+   O 4
+   O 5
+
+   Q O 2
+   G
+   C 6
+   C 7
+
+
+
+
+or4s2
+4 0 1
+DIN1 DIN2 DIN3 DIN4
+   Q O 4
+   G
+   O 0
+   O 1
+   O 2
+   O 3
+
+or4s1
+4 0 1
+DIN1 DIN2 DIN3 DIN4
+   Q O 4
+   G
+   O 0
+   O 1
+   O 2
+   O 3
+
+
+nor3s3
+3 0 1
+DIN1 DIN2 DIN3
+   Q A 3
+   G
+   C 0
+   C 1
+   C 2
+
+
+nor3s2
+3 0 1
+DIN1 DIN2 DIN3
+   Q A 3
+   G
+   C 0
+   C 1
+   C 2
+
+
+
+
+nor3s1
+3 0 1
+DIN1 DIN2 DIN3
+   Q A 3
+   G
+   C 0
+   C 1
+   C 2
+
+
+dsmxc31s2
+3 2 1
+CLK DIN1 DIN2
+   A 2
+   G
+   O 1
+   C 0
+
+   A 2
+   G
+   O 2
+   O 0
+
+   Q O 2
+   G
+   O 3
+   O 4
+
+
+oai221s1
+5 2 1
+DIN1 DIN2 DIN3 DIN4 DIN5
+   O 2
+   G
+   O 0
+   O 1
+   
+   O 2
+   G
+   O 2
+   O 3
+
+   Q O 3
+   G
+   C 4
+   C 5
+   C 6
+
+
+oai221s3
+5 2 1
+DIN1 DIN2 DIN3 DIN4 DIN5
+   O 2
+   G
+   O 0
+   O 1
+   
+   O 2
+   G
+   O 2
+   O 3
+
+   Q O 3
+   G
+   C 4
+   C 5
+   C 6
+
+
+or4s3
+4 0 1
+DIN1 DIN2 DIN3 DIN4
+   Q O 4
+   G
+   O 0
+   O 1
+   O 2
+   O 3
+
+
+aoi22s1
+4 2 1
+DIN1 DIN2 DIN3 DIN4
+   A 2
+   G
+   O 0
+   O 1
+   
+   A 2
+   G
+   O 2
+   O 3
+
+   Q A 2
+   G
+   C 4
+   C 5
+
+
+
+aoai1112s3
+5 2 1
+DIN1 DIN2 DIN3 DIN4 DIN5
+   A 2
+   G
+   O 3
+   O 4
+   
+   O 2
+   G
+   O 2
+   O 5
+   
+   Q O 3
+   G
+   C 0
+   C 1
+   C 6
+
+aoai1112s1
+5 2 1
+DIN1 DIN2 DIN3 DIN4 DIN5
+   A 2
+   G
+   O 3
+   O 4
+   
+   O 2
+   G
+   O 2
+   O 5
+   
+   Q O 3
+   G
+   C 0
+   C 1
+   C 6
+
+
+aoi23s1
+5 2 1
+DIN1 DIN2 DIN3 DIN4 DIN5
+   A 2
+   G
+   O 0
+   O 1
+   
+   A 3
+   G
+   O 2
+   O 3
+   O 4
+
+   Q A 2
+   G
+   C 5
+   C 6
+
+
+aoi23s3
+5 2 1
+DIN1 DIN2 DIN3 DIN4 DIN5
+   A 2
+   G
+   O 0
+   O 1
+   
+   A 3
+   G
+   O 2
+   O 3
+   O 4
+
+   Q A 2
+   G
+   C 5
+   C 6
+
+
+mxi21s1
+3 2 1
+DIN1 DIN2 SIN
+   A 2
+   G
+   O 0
+   C 2
+
+   A 2
+   G
+   O 1
+   O 2
+
+   Q A 2
+   G
+   C 3
+   C 4
+
+
+aoi13s1
+4 1 1
+DIN1 DIN2 DIN3 DIN4
+   A 3
+   G
+   O 1
+   O 2
+   O 3
+   
+   Q A 2
+   G
+   C 0
+   C 4
+
+
+aoi13s3
+4 1 1
+DIN1 DIN2 DIN3 DIN4
+   A 3
+   G
+   O 1
+   O 2
+   O 3
+   
+   Q A 2
+   G
+   C 0
+   C 4
+
+
+oai13s1
+4 1 1
+DIN1 DIN2 DIN3 DIN4
+   O 3
+   G
+   O 1
+   O 2
+   O 3
+   
+   Q O 2
+   G
+   C 0
+   C 4
+
+
+oai211s1
+4 1 1
+DIN1 DIN2 DIN3 DIN4
+   O 2
+   G
+   O 0
+   O 1
+   
+   Q O 3
+   G
+   C 2
+   C 3
+   C 4
+
+oai1112s1
+5 1 1
+DIN1 DIN2 DIN3 DIN4 DIN5
+   O 2
+   G
+   O 3
+   O 4
+   
+   Q O 4
+   G
+   C 0
+   C 1
+   C 2
+   C 5
+
+
+dsmxc31s1
+3 2 1
+DIN1 DIN2 CLK
+   A 2
+   G
+   O 0
+   C 2
+   
+   A 2
+   G
+   O 1
+   O 2
+
+   Q O 2
+   G
+   O 3
+   O 4
+
+
+or2s3
+2 0 1
+DIN1 DIN2
+   Q O 2
+   G
+   O 0
+   O 1
+
+
+
+or2s2
+2 0 1
+DIN1 DIN2
+   Q O 2
+   G
+   O 0
+   O 1
+
+
+oai32s3
+5 2 1
+DIN1 DIN2 DIN3 DIN4 DIN5
+   O 3
+   G
+   O 0
+   O 1
+   O 2
+   
+   O 2
+   G
+   O 3
+   O 4
+
+   Q O 2
+   G
+   C 5
+   C 6
+
+
+oai1112s3
+5 1 1
+DIN1 DIN2 DIN3 DIN4 DIN5
+   O 2
+   G
+   O 3
+   O 4
+
+   Q O 4
+   G
+   C 0
+   C 1
+   C 2
+   C 5
+
+
+nor2s2
+2 0 1
+DIN1 DIN2
+   Q A 2
+   G
+   C 0
+   C 1
+
+
+aoai122s1
+5 3 1
+DIN1 DIN2 DIN3 DIN4 DIN5
+   A 2
+   G
+   O 1
+   O 2
+   
+   A 2
+   G
+   O 3
+   O 4
+   
+   O 2
+   G
+   O 5
+   O 6
+   
+   Q O 2
+   G
+   C 0
+   C 7
+
+
+aoai122s3
+5 3 1
+DIN1 DIN2 DIN3 DIN4 DIN5
+   A 2
+   G
+   O 1
+   O 2
+   
+   A 2
+   G
+   O 3
+   O 4
+   
+   O 2
+   G
+   O 5
+   O 6
+   
+   Q O 2
+   G
+   C 0
+   C 7
+
+
+and2s2
+2 0 1
+DIN1 DIN2
+   Q A 2
+   G
+   O 0
+   O 1
+
+
+and2s3
+2 0 1
+DIN1 DIN2
+   Q A 2
+   G
+   O 0
+   O 1
+
+
+xnr3s1
+3 0 1
+DIN1 DIN2 DIN3
+   Q X 3
+   G
+   C 0
+   O 1
+   O 2
+   
+xnr3s2
+3 0 1
+DIN1 DIN2 DIN3
+   Q X 3
+   G
+   C 0
+   O 1
+   O 2
+
+
+nnd4s2
+4 0 1
+DIN1 DIN2 DIN3 DIN4
+   Q O 4
+   G
+   C 0
+   C 1
+   C 2
+   C 3
+
+
+xor3s1
+3 0 1
+DIN1 DIN2 DIN3
+   Q X 3
+   G
+   O 0
+   O 1
+   O 2
+   
+xor3s3
+3 0 1
+DIN1 DIN2 DIN3
+   Q X 3
+   G
+   O 0
+   O 1
+   O 2
+
+xor3s2
+3 0 1
+DIN1 DIN2 DIN3
+   Q X 3
+   G
+   O 0
+   O 1
+   O 2
+
+
+oai21s3
+3 1 1
+DIN1 DIN2 DIN3
+   O 2
+   G
+   O 0
+   O 1
+   
+   Q O 2
+   G
+   C 2
+   C 3
+
+nnd5s1
+5 0 1
+DIN1 DIN2 DIN3 DIN4 DIN5
+   Q O 5
+   G
+   C 0
+   C 1
+   C 2
+   C 3
+   C 4
+
+nnd5s3
+5 0 1
+DIN1 DIN2 DIN3 DIN4 DIN5
+   Q O 5
+   G
+   C 0
+   C 1
+   C 2
+   C 3
+   C 4
+
+nnd6s1
+6 0 1
+DIN1 DIN2 DIN3 DIN4 DIN5 DIN6
+   Q O 6
+   G
+   C 0
+   C 1
+   C 2
+   C 3
+   C 4
+   C 5
+
+nnd6s3
+6 0 1
+DIN1 DIN2 DIN3 DIN4 DIN5 DIN6
+   Q O 6
+   G
+   C 0
+   C 1
+   C 2
+   C 3
+   C 4
+   C 5
+
+aoi211s2
+4 1 1
+DIN1 DIN2 DIN3 DIN4
+   A 2
+   G
+   O 0
+   O 1
+
+   Q A 3
+   G
+   C 2
+   C 3
+   C 4
+
+
+aoi211s3
+4 1 1
+DIN1 DIN2 DIN3 DIN4
+   A 2
+   G
+   O 0
+   O 1
+
+   Q A 3
+   G
+   C 2
+   C 3
+   C 4
+
+mx21s1
+3 2 1
+DIN1 DIN2 SIN
+   A 2
+   G
+   O 0
+   C 2
+   
+   A 2
+   G
+   O 1
+   O 2
+
+   Q O 2
+   G
+   O 3
+   O 4
+   
+   
+mx21s3
+3 2 1
+DIN1 DIN2 SIN
+   A 2
+   G
+   O 0
+   C 2
+   
+   A 2
+   G
+   O 1
+   O 2
+
+   Q O 2
+   G
+   O 3
+   O 4
+   
+mx41s1
+6 4 1
+DIN1 DIN2 DIN3 DIN4 SIN0 SIN1
+   A 3
+   G
+   O 0
+   C 4
+   C 5
+   
+   A 3
+   G
+   O 1
+   O 4
+   C 5
+   
+   A 3
+   G
+   O 2
+   C 4
+   O 5
+   
+   A 3
+   G
+   O 3
+   O 4
+   O 5
+   
+   Q O 4
+   G
+   O 6
+   O 7
+   O 8
+   O 9
+   
+
+mx21s2
+3 2 1
+DIN1 DIN2 SIN
+   A 2
+   G
+   O 0
+   C 2
+   
+   A 2
+   G
+   O 1
+   O 2
+
+   Q O 2
+   G
+   O 3
+   O 4
+
+
+
+nb1s3
+1 0 1
+DIN
+   Q N 1
+   G
+   O 0
+
+nb1s4
+1 0 1
+DIN
+   Q N 1
+   G
+   O 0
+
+nb1s5
+1 0 1
+DIN
+   Q N 1
+   G
+   O 0
+
+
+nor2s3
+2 0 1
+DIN1 DIN2
+   Q A 2
+   G
+   C 0
+   C 1
+   
+
+
+
+
+
+
+
+
+
+
