@@ -1,10 +1,10 @@
 # FLOSS
 This is the public repo releasing the binary of the FLOSS (Functional Logic Obfuscation Security Assessment Suite) framework.
 
-# Requirements
+# Requirements (Working Environment)
 To run the jar files it is recommended that you have at least Java 1.8.
 
-To use the bash script and run the m_refsm and redpen executables, it is recommended that you use a linux operating system.
+To use the bash script and run the m_refsm and redpen executables, it is recommended that you use a **linux operating system (ubuntu was used)**.
 
 # Running
 There are 4 steps provided in this repo that enables extraction of the FSMs
