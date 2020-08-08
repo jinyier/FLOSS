@@ -1,5 +1,5 @@
 # FLOSS
-This is the public repo releasing the binary of the FLOSS framework.
+This is the public repo releasing the binary of the FLOSS (Functional Logic Obfuscation Security Assessment Suite) framework.
 
 # Requirements
 To run the jar files it is recommended that you have at least Java 1.8.
