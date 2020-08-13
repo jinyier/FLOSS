@@ -57,7 +57,7 @@ echo New netlist created!
 echo ""
 echo Generating register dependency...
 ./$BIN_DIR/redpen --lib $FULL_LIB_PATH --net $NETLIST_DIR/$UPDATED_NETLIST_FILE > $NETLIST_DIR/reg_dep.txt
-echo register depencency created at $NETLIST_DIR/reg_dep.txt!
+echo register dependency created at $NETLIST_DIR/reg_dep.txt!
 
 echo ""
 echo Generating cliques...
