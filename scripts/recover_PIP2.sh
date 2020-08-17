@@ -1,24 +1,25 @@
 
 
-if [ $# -gt 3 ]
+if [ $# -gt 2 ]
 then
-    NETLIST_DIR=$1
-    ORIGINAL_NETLIST_FILE=$2
+    FULL_NET_LOCATION=$1
+    NETLIST_DIR=$(dirname $FULL_NET_LOCATION)
+    ORIGINAL_NETLIST_FILE=$(basename $FULL_NET_LOCATION)
     ORIGINAL_NETLIST_NAME="$(basename "$ORIGINAL_NETLIST_FILE" .v)"
-    TIME_LIMIT=$3
-    MAX_WORDS=$4
+    TIME_LIMIT=$2
+    MAX_WORDS=$3
     LIBRARY_DIR="lib"
     LIBRARY_NAME="harp.rlb"
     FULL_LIB_PATH=$LIBRARY_DIR/$LIBRARY_NAME
-    if [ $# -gt 4 ]
+    if [ $# -gt 3 ]
     then
-        FULL_LIB_PATH=$5
+        FULL_LIB_PATH=$4
     fi
 else
     echo "### Script usage Usage ###"
-    echo "$ bash "$0" <netlist_dir> <netlist_name> <time_limit> <max_words> [library_file]"
+    echo "$ bash "$0" <full_netlist_path> <time_limit> <max_words> [library_file]"
     echo "Example run would be"
-    echo "$ bash scripts/recover_PIP2.sh netlist/des3_v3_8to6 obf_debug_final.v 10s 10"
+    echo "$ bash scripts/recover_PIP2.sh netlist/des3_v3_8to6/obf_debug_final.v 10s 10"
     echo "In practice it is a good idea to let the timelimit be around 4 to 5 hours"
     TIME_LIMIT="1s"
     MAX_WORDS="1000"
@@ -39,7 +40,6 @@ UPDATED_NETLIST_NAME=$ORIGINAL_NETLIST_NAME"_2"
 UPDATED_NETLIST_FILE=$UPDATED_NETLIST_NAME".v"
 
 # Get the current directory in case we need to return
-curDir=$(pwd)
 echo Working on $ORIGINAL_NETLIST_FILE
 
 # Only use this if you have a lot of memory at your disposal
@@ -96,5 +96,5 @@ for file in $NETLIST_DIR/fsms/*[0-9].out; do
     fi
 done
 
-# Return to the original directory at the end
-cd $curDir
+echo ""
+echo "Check the $LOG_FILE file for the full results"
